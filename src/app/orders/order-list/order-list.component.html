@@ -1,0 +1,10 @@
+<table class="table">
+    <tr *ngFor="let item of service.list">
+        <td (click)="populateForm(item)">{{item.Name}}</td>
+        <td (click)="populateForm(item)">{{item.ReceivedDate}}</td>
+        <td (click)="populateForm(item)">{{item.Quantity}}</td>
+        <td>
+            <i class="fa fa-trash text-danger" (click)="onDelete(item.ID)"></i>
+        </td>
+    </tr>
+</table>
